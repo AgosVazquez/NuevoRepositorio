@@ -44,6 +44,8 @@ main {
   display: flex;
   background-color: black;
   min-height: 530px;
+  width: 100%;
+  /*ESTILOS DEL MAIN SERVICIOS*/
 }
 main .fotoperfil {
   float: center;
@@ -71,19 +73,15 @@ main .presentacion p {
   width: 70%;
   padding: 27px;
 }
-
-/*ESTILOS DEL MAIN SERVICIOS*/
-.bloque1 {
+main .bloque1 {
   float: left;
   margin: auto;
 }
-
-.bloque2 {
+main .bloque2 {
   float: right;
   margin: auto;
 }
-
-.transition {
+main .transition {
   min-height: 50px;
   width: 500px;
   background-color: gold;
@@ -92,29 +90,33 @@ main .presentacion p {
   padding: 10px;
   border: 2px solid #000;
 }
-
-#t1 {
+main #t1 {
   transition: height 2.7s;
 }
-
-#t1:hover {
+main #t1:hover {
   height: 100px;
 }
-
-#t2 {
+main #t2 {
   transition: height 2s;
 }
-
-#t2:hover {
+main #t2:hover {
   height: 100px;
 }
-
-#t3 {
+main #t3 {
   transition: height 2.7s;
 }
-
-#t3:hover {
+main #t3:hover {
   height: 100px;
+}
+ /*ESTILOS DEL MAIN CONTACTO*/
+main h2 {
+  color: white;
+  text-align: center;
+  padding: 17px;
+}
+main h3 {
+  color: white;
+  text-align: center;
 }
 
 /*ESTILOS DEL MAIN PORTFOLIO*/
@@ -195,7 +197,6 @@ footer {
   text-transform: capitalize;
   padding: 10px;
 }
-
 footer i {
   font-size: 20px;
   color: black;

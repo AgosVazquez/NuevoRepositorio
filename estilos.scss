@@ -46,7 +46,7 @@ main{
     display: flex;
     background-color: black;
     min-height: 530px;
-
+    width: 100%;
     .fotoperfil{
         float: center;
     }
@@ -76,43 +76,52 @@ main{
         width: 70%;
         padding: 27px;
     }
-}
-
-/*ESTILOS DEL MAIN SERVICIOS*/
-.bloque1{
-    float: left;
-    margin: auto;
-}
-.bloque2{
-    float: right;
-    margin: auto;
-}
-.transition{
-    min-height: 50px;
-    width: 500px;
-    background-color: gold;
-    text-align: center;
-    font-size: 29px;
-    padding: 10px;
-    border: 2px solid #000;    
-}
-#t1{
-    transition: height 2.7s;
-}
-#t1:hover{
-    height: 100px;
-}
-#t2{
-    transition: height 2s;
-}
-#t2:hover{
-    height: 100px;
-}
-#t3{
-    transition: height 2.7s;
-}
-#t3:hover{
-    height: 100px;
+        /*ESTILOS DEL MAIN SERVICIOS*/
+    .bloque1{
+        float: left;
+        margin: auto;
+    }
+    .bloque2{
+        float: right;
+        margin: auto;
+    }
+    .transition{
+        min-height: 50px;
+        width: 500px;
+        background-color: gold;
+        text-align: center;
+        font-size: 29px;
+        padding: 10px;
+        border: 2px solid #000;    
+    }
+    #t1{
+        transition: height 2.7s;
+    }
+    #t1:hover{
+        height: 100px;
+    }
+    #t2{
+        transition: height 2s;
+    }
+    #t2:hover{
+        height: 100px;
+    }
+    #t3{
+        transition: height 2.7s;
+    }
+    #t3:hover{
+        height: 100px;
+    }
+/*ESTILOS DEL MAIN CONTACTO*/
+    h2{
+        color: white;
+        text-align: center;
+        padding: 17px;
+    }
+    h3{
+        color: white;
+        text-align: center;
+    }
 }
 /*ESTILOS DEL MAIN PORTFOLIO*/
 .galeria{
@@ -173,6 +182,7 @@ main{
     background-position: center;
     background-size: cover;
 }
+
 /*ESTILOS DEL FOOTER*/
 footer{
     background-color: gold;
@@ -181,14 +191,16 @@ footer{
     font-size: 15px;
     text-transform: capitalize;
     padding: 10px;
+
+    i{
+        font-size: 20px;
+        color: black;
+        letter-spacing: 20px;
+        margin-top: 15px;
+        display: flex;
+    }
 }
-footer i{
-    font-size: 20px;
-    color: black;
-    letter-spacing: 20px;
-    margin-top: 15px;
-    display: flex;
-}
+
 @media (max-width:700px){
     header{
         flex-direction: column;
@@ -250,8 +262,8 @@ footer i{
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 200px);
         grid-template-areas: "img1 img2 img3 img3"
-                             "img1 img4 img5 img6"
-                             "img7 img4 img8 img8";
+                            "img1 img4 img5 img6"
+                            "img7 img4 img8 img8";
     }
     .item1{
         grid-area: img1;
