@@ -109,16 +109,27 @@ main #t3:hover {
   height: 100px;
 }
  /*ESTILOS DEL MAIN CONTACTO*/
-main h2 {
+main h2{
   color: white;
   text-align: center;
-  padding: 17px;
+  padding: 31px;
+  margin-left: 398px;
 }
-main h3 {
+main h3{
   color: white;
   text-align: center;
+  margin-left: 404px;
 }
-
+main form{
+  color: white;
+  margin-left: -572px;
+  margin-top: 164px;
+}
+main iframe{
+  margin-top: -178px;
+  margin-right: 266px;
+  margin-left: 322px;
+}
 /*ESTILOS DEL MAIN PORTFOLIO*/
 .galeria {
   background-color: black;

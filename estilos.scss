@@ -116,11 +116,23 @@ main{
     h2{
         color: white;
         text-align: center;
-        padding: 17px;
+        padding: 31px;
+        margin-left: 398px;
     }
     h3{
         color: white;
         text-align: center;
+        margin-left: 404px;
+    }
+    form{
+        color: white;
+        margin-left: -572px;
+        margin-top: 164px;
+    }
+    iframe{
+        margin-top: -178px;
+        margin-right: 266px;
+        margin-left: 322px;
     }
 }
 /*ESTILOS DEL MAIN PORTFOLIO*/
@@ -192,13 +204,24 @@ footer{
     text-transform: capitalize;
     padding: 10px;
 
-    i{
+    .redes{
         font-size: 20px;
         color: black;
         letter-spacing: 20px;
         margin-top: 15px;
         display: flex;
     }
+    $redes: ( /*Declaramos nuestro mapa*/
+        instagram: #000000,
+        whatsapp:  #000000,
+        behance: #000000
+    );
+    @each $red, $color in $redes {
+        .btn--#{$black} {
+            background-color: $color;
+        }
+        }
+        
 }
 
 @media (max-width:700px){
