@@ -43,29 +43,33 @@ header{
 
 /*ESTILOS DEL MAIN INDEX*/
 main{
-    display: flex;
+    
     background-color: black;
     min-height: 530px;
     width: 100%;
     .fotoperfil{
         float: center;
+        
+        min-height: 70px;
     }
     
     .fotoperfil img{
-        width:310px;
+        width: 285px;
         display: flex;
-        padding: 10px;
-        margin-left: 259px;
+        
+        margin-left: 525px;
         margin-top: 85px;
         padding: 10px;
+        
     }
     
     .presentacion h1{
         color: gold;
         font-size: 25px;
-        display: flex;
+        
         margin-left: 26px;
         margin-top: 121px;
+        display: flex;
     }
     
     .presentacion p{
@@ -75,6 +79,7 @@ main{
         margin-top: -29px;
         width: 70%;
         padding: 27px;
+        
     }
         /*ESTILOS DEL MAIN SERVICIOS*/
     .bloque1{
@@ -224,7 +229,7 @@ footer{
         
 }
 
-@media (max-width:700px){
+@media (max-width:400px){
     header{
         flex-direction: column;
     }
@@ -308,5 +313,58 @@ footer{
     }
     .item8{
         grid-area: img8;
+    }
+}
+
+@media screen and (min-width:780px) and (max-width:1024px){
+    .fotoperfil{ 
+        width: 100%;
+    }
+    .fotoperfilimg{ 
+        width: 100%;
+    }
+    .presentacionh1{
+        width: 100%;
+    }
+    .presentacion{
+        width: 100%;
+    }
+}
+@media screen and (min-width:415px) and (max-width:780px){
+    .fotoperfil{ 
+        width: 75%;
+        
+    }
+    .fotoperfilimg{ 
+        width: 75%;
+        
+    }
+    .presentacionh1{
+        width: 75%;
+        
+    }
+    .presentacion{
+        width: 75%;
+        
+    }
+}
+@media screen and (min-width:415px) {
+    .fotoperfil{ 
+        width: 100%;
+        margin-left: -197px;
+    }
+    .fotoperfilimg{ 
+        width: 100%;
+        margin-left: 258px;
+    }
+    .presentacionh1{
+        width: 100%;
+        margin-left: 87px;
+        margin-top: 25px;
+        padding: 10px;
+    }
+    .presentacion{
+        width: 100%;
+        margin-left: 71px;
     }
 }

@@ -45,18 +45,21 @@ main {
   background-color: black;
   min-height: 530px;
   width: 100%;
+  display: flex;
   /*ESTILOS DEL MAIN SERVICIOS*/
 }
 main .fotoperfil {
-  float: center;
+  min-height: 70px;
+  
 }
 main .fotoperfil img {
-  width: 310px;
+  width: 285px;
   display: flex;
+        
+  margin-left: 525px;
+  margin-top: 97px;
   padding: 10px;
-  margin-left: 259px;
-  margin-top: 85px;
-  padding: 10px;
+
 }
 main .presentacion h1 {
   color: gold;
@@ -64,6 +67,7 @@ main .presentacion h1 {
   display: flex;
   margin-left: 26px;
   margin-top: 121px;
+  display: flex;
 }
 main .presentacion p {
   color: white;
@@ -72,6 +76,7 @@ main .presentacion p {
   margin-top: -29px;
   width: 70%;
   padding: 27px;
+  display: flex;
 }
 main .bloque1 {
   float: left;
@@ -299,4 +304,61 @@ footer i {
   .item8 {
     grid-area: img8;
   }
-}/*# sourceMappingURL=estilos.css.map */
+}
+@media screen and (min-width:780px) and (max-width:1024px){
+  .fotoperfil{ 
+      width: 100%;
+  }
+  .fotoperfilimg{ 
+      width: 100%;
+  }
+  .presentacionh1{
+      width: 100%;
+  }
+  .presentacion{
+      width: 100%;
+  }
+}
+@media screen and (min-width:415px) and (max-width:780px){
+  .fotoperfil{ 
+      width: 75%;
+      
+  }
+  .fotoperfilimg{ 
+      width: 75%;
+      
+  }
+  .presentacionh1{
+      width: 75%;
+      margin-left: 87px;
+      margin-top: 25px;
+      padding: 10px;
+  }
+  .presentacion{
+      width: 75%;
+      margin-left: 71px;
+  }
+}
+@media screen and (min-width:415px) {
+  .fotoperfil{ 
+      width: 100%;
+      margin-left: -197px;
+
+  }
+  .fotoperfilimg{ 
+      width: 100%;
+      margin-left: 258px;
+      
+  }
+  .presentacionh1{
+      width: 100%;
+      margin-left: 87px;
+      margin-top: 25px;
+      padding: 10px;
+  }
+  .presentacion{
+      width: 100%;
+      margin-left: 71px;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
